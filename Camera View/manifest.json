@@ -1,0 +1,21 @@
+{
+   "manifest_version": 3,
+   "name": "Camera Stream Viewer",
+   "version": "1.0",
+   "description": "A Chrome extension to display the camera stream.",
+   "permissions": ["activeTab"],
+   "host_permissions": ["http://*/*","https://*/*"],
+   "action": {
+     "default_popup": "popup.html",
+     "default_icon": {
+       "16": "icon.png",
+       "48": "icon.png",
+       "128": "icon.png"
+     }
+   },
+   "content_security_policy": {
+    "extensions_pages": "script-src 'self'; object-src 'self'"
+   },
+   "options_page": "options.html"
+ }
+ 
